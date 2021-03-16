@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-blue: hsl(229, 23%, 23%);
+    --grayish-blue: hsl(227, 10%, 46%);
+    --light-gray: hsla(0, 0%, 59%, 0.5);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: var(--dark-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    /* circles */
+    background-image: url(./images/bg-pattern-top.svg),
+        url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 30vh right 53vw, top 50vh left 50vw;
+}
+
+/* card */
+.card {
+    height: 400px;
+    width: 350px;
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    color: var(--dark-blue);
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* top part */
+.top img {
+    user-select: none;
+}
+
+/* mid part */
+.mid {
+    position: relative;
+}
+.mid img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -120%);
+    border-radius: 50%;
+    border: 6px solid #fff;
+    background: #fff;
+    user-select: none;
+}
+.mid h2 {
+    margin-top: 40px;
+    font-weight: 700;
+}
+.mid h2 span {
+    font-weight: 400;
+    color: var(--grayish-blue);
+}
+.mid p {
+    margin-top: 8px;
+    font-size: 18px;
+    color: var(--grayish-blue);
+    font-weight: 400;
+}
+
+hr {
+    background: var(--light-gray);
+    border: none;
+    height: 1px;
+}
+
+/* bottom part */
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 25px 25px;
+}
+.bottom h2 {
+    font-weight: 700;
+}
+.bottom p {
+    margin-top: 5px;
+    font-size: 18px;
+    color: var(--grayish-blue);
+    font-weight: 400;
+}
