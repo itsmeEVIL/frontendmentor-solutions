@@ -1,3 +1,3 @@
 # Frontend Mentor - Solutions
 
-solutions to [frontend mentor challenges](https://frontendmentor.io/challenges).
+some of my solutions to [frontend mentor challenges](https://frontendmentor.io/challenges).
