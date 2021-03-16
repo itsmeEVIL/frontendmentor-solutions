@@ -22,7 +22,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
--   Solution URL: [Solution](https://your-solution-url.com)
+-   Solution URL: [Solution](https://www.frontendmentor.io/solutions/profile-card-component-html-css-Pq0ztMeGB)
 -   Live Site URL: [Live Site](https://itsmeevil-frontendmentor-solutions.netlify.app/profile-card)
 
 ## Author
