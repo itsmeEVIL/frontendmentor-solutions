@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 -   Solution URL: [Solution](#)
--   Live Site URL: [Live Site](#)
+-   Live Site URL: [Live Site](https://itsmeevil-frontendmentor-solutions.netlify.app/faq-accordion-card/)
 
 ## Author
 
