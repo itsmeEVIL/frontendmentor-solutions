@@ -234,7 +234,7 @@ body {
     }
     .images img:nth-child(5) {
         position: absolute;
-        top: -18.5%;
+        top: -19.5%;
         left: 50%;
         transform: translateX(-55%) rotate(-1deg);
     }
