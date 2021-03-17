@@ -143,9 +143,6 @@ body {
     cursor: pointer;
     list-style: none;
 }
-.question::-webkit-details-marker {
-    display: none;
-}
 .question h3 {
     color: var(--very-dark-grayish-blue);
     font-weight: 400;
