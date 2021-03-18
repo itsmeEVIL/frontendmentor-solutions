@@ -12,6 +12,7 @@
     --very-dark-grayish-blue: hsl(237, 12%, 33%);
     --dark-grayish-blue: hsl(240, 6%, 50%);
     --light-grayish-blue: hsl(240, 5%, 91%);
+    --light-gray: hsl(0, 0%, 80%);
 }
 
 * {
@@ -101,16 +102,15 @@ body {
     height: 0;
 }
 .faq-questions::-webkit-scrollbar-track {
-    background: var(--light-grayish-blue);
-    border-radius: 10px;
+    background: transparent;
 }
 .faq-questions::-webkit-scrollbar-thumb {
-    background: var(--dark-grayish-blue);
-    border-radius: 10px;
+    background: var(--light-gray);
+    border-radius: 5px;
 }
 
 .faq-question {
-    width: 85%;
+    width: 380px;
     border-bottom: 1px solid var(--light-grayish-blue);
     position: relative;
 }
@@ -166,10 +166,6 @@ body {
 
 .answer {
     width: 80%;
-    transform: translateY(-100%);
-    transform-origin: top;
-    opacity: 0;
-    pointer-events: none;
 }
 .answer p {
     color: var(--dark-grayish-blue);
@@ -209,6 +205,10 @@ body {
         top: 43%;
         left: -9.5%;
     }
+
+    .faq-question {
+        width: 337px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -244,13 +244,16 @@ body {
     }
 
     .faq {
-        margin: 130px 15px 0 20px;
+        margin: 130px 0 0 20px;
     }
     .faq-header {
         text-align: center;
     }
     .faq-questions {
-        margin-right: 0;
+        margin-right: 3px;
+    }
+    .faq-questions::-webkit-scrollbar {
+        width: 3px;
     }
     .faq-question {
         width: 98%;
