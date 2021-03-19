@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](#)
--   Live Site URL: [Add live site URL here](https://itsmeevil-frontendmentor-solutions.netlify.app/social-proof-section)
+-   Solution URL: [Solution](https://www.frontendmentor.io/solutions/social-proof-section-html-css-L5I7t2ffi)
+-   Live Site URL: [Live Site](https://itsmeevil-frontendmentor-solutions.netlify.app/social-proof-section)
 
 ## Author
 
