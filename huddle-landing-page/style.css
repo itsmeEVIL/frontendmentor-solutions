@@ -185,8 +185,15 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+    .navigation {
+        height: 10vh;
+    }
     .navigation__logo {
         width: 30%;
+    }
+
+    .main {
+        height: 80vh;
     }
 
     .introduction {
@@ -222,7 +229,8 @@ body {
 @media only screen and (max-width: 425px) {
     body {
         background-image: url(./images/bg-mobile.svg);
-        background-position: top center;
+        background-position: center right;
+        background-size: cover;
     }
 
     .navigation__logo {
