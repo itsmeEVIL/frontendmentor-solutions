@@ -128,6 +128,9 @@ body {
     text-decoration: none;
     transition: all 0.2s ease;
 }
+.footer__link:nth-child(3) {
+    font-size: 1.9rem;
+}
 .footer__link:hover {
     border-color: var(--soft-magenta);
     color: var(--soft-magenta);
