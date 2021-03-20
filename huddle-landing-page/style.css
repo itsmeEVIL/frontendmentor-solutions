@@ -19,7 +19,8 @@ html {
 body {
     min-height: 100vh;
     background: url(./images/bg-desktop.svg), var(--violet);
-    background-position: top center;
+    background-position: center center;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
