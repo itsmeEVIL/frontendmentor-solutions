@@ -15,8 +15,8 @@
 }
 
 *,
-::before,
-::after {
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -250,6 +250,10 @@ body {
 
 /* width */
 @media only screen and (max-width: 655px) {
+    .navigation__logo:focus {
+    outline: none;
+    }
+    
     .main__content-top__heading {
         font-size: 2.5rem;
     }
@@ -291,10 +295,11 @@ body {
         margin-left: 0;
     }
 
-    .main__content-illustration {
-        display: inherit;
-    }
     .main__content-illustration__image {
         width: 100%;
+    }
+    
+    .footer__links-link:focus {
+    outline: none;
     }
 }
