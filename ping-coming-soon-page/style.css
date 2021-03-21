@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+    /* primary */
+    --blue: hsl(223, 87%, 63%);
+
+    /* secondary */
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    --light-green: rgb(98, 218, 51);
+
+    /* neutral */
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    background: #fff;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.navigation {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation__logo {
+    user-select: none;
+    cursor: pointer;
+}
+.navigation__logo:focus {
+    outline: 2px dashed var(--blue);
+}
+
+.main__content {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__content-top {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    display: inherit;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+.main__content-top__heading {
+    font-size: 4.5rem;
+    font-weight: 300;
+    color: var(--gray);
+}
+.main__content-top__heading span {
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+
+.main__content-top__paragraph {
+    font-size: 1.9rem;
+    font-weight: 300;
+    color: var(--very-dark-blue);
+    margin: 10px 0 35px;
+}
+
+.main__content-top__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.main__content-top__form-input {
+    height: 50px;
+    width: 390px;
+    border: 1px solid var(--pale-blue);
+    border-radius: 28px;
+    color: var(--very-dark-blue);
+    background: transparent;
+    padding: 0 25px;
+    outline: none;
+    font-family: "Libre Franklin", sans-serif;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.main__content-top__form-input::placeholder {
+    color: var(--pale-blue);
+}
+.main__content-top__form-input:focus {
+    border-color: var(--blue);
+}
+
+.main__content-top__form-input:valid:focus:not(:placeholder-shown) {
+    border-color: var(--light-green);
+}
+.main__content-top__form-input:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: var(--light-red);
+}
+.main__content-top__form-input:invalid:focus:not(:placeholder-shown) {
+    border-color: var(--light-red);
+}
+
+.main__content-top__form-input + span::after {
+    content: "Please provide a valid email address";
+    font-size: 11px;
+    font-style: italic;
+    color: var(--light-red);
+    position: absolute;
+    top: 45px;
+    left: 25px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.main__content-top__form-input:invalid:not(:focus):not(:placeholder-shown)
+    + span::after {
+    top: 53px;
+    opacity: 1;
+}
+.main__content-top__form-input:invalid:focus:not(:placeholder-shown)
+    + span::after {
+    opacity: 1;
+    top: 53px;
+}
+
+.main__content-top__form-button {
+    height: 50px;
+    width: 180px;
+    border: none;
+    border-radius: 28px;
+    background: var(--blue);
+    color: #fff;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 600;
+    margin-left: 15px;
+    box-shadow: 0 5px 10px var(--pale-blue);
+    cursor: pointer;
+    outline: 0;
+    transition: all 0.3s ease;
+}
+.main__content-top__form-button:hover,
+.main__content-top__form-button:focus {
+    opacity: 0.8;
+}
+.main__content-top__form-button:focus {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 5px var(--blue);
+}
+
+.main__content-illustration {
+    flex: 2;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    user-select: none;
+}
+.main__content-illustration__image {
+    height: auto;
+    width: 590px;
+}
+
+.footer {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__links {
+    flex: 1;
+    display: inherit;
+    flex-direction: row;
+}
+.footer__links-link {
+    height: 30px;
+    width: 30px;
+    border: 1px solid var(--pale-blue);
+    border-radius: 50%;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: var(--blue);
+    text-decoration: none;
+    margin: 0 7px;
+    transition: all 0.3s ease;
+}
+.footer__links-link:nth-child(3) {
+    font-size: 15px;
+}
+.footer__links-link:hover,
+.footer__links-link:focus {
+    color: #fff;
+    background: var(--blue);
+    border-color: var(--blue);
+}
+.footer__links-link:focus {
+    outline: 2px dashed var(--blue);
+}
+
+.footer__copyright {
+    flex: 1;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 11px;
+    color: var(--gray);
+}
+
+/* height */
+@media only screen and (max-height: 800px) {
+    .navigation {
+        height: 15vh;
+    }
+
+    .main__content {
+        height: 75vh;
+    }
+}
+@media only screen and (max-height: 700px) {
+    .navigation {
+        height: 10vh;
+    }
+
+    .main__content {
+        height: 80vh;
+    }
+}
+
+/* width */
+@media only screen and (max-width: 655px) {
+    .main__content-top__heading {
+        font-size: 2.5rem;
+    }
+
+    .main__content-top__paragraph {
+        font-size: 1.5rem;
+    }
+
+    .main__content-top__form {
+        width: 90%;
+        flex-direction: column;
+    }
+    .main__content-top__form-input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .main__content-top__form-input:invalid:not(:focus):not(:placeholder-shown) {
+        margin-bottom: 30px;
+    }
+    .main__content-top__form-input:invalid:focus:not(:placeholder-shown) {
+        margin-bottom: 30px;
+    }
+    .main__content-top__form-input + span::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .main__content-top__form-input:invalid:not(:focus):not(:placeholder-shown)
+        + span::after {
+        top: 55px;
+    }
+    .main__content-top__form-input:invalid:focus:not(:placeholder-shown)
+        + span::after {
+        top: 55px;
+    }
+
+    .main__content-top__form-button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .main__content-illustration {
+        display: inherit;
+    }
+    .main__content-illustration__image {
+        width: 100%;
+    }
+}
