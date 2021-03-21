@@ -37,17 +37,17 @@ body {
     text-align: center;
 }
 
-.navigation {
+.header {
     height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.navigation__logo {
+.header__logo {
     user-select: none;
     cursor: pointer;
 }
-.navigation__logo:focus {
+.header__logo:focus {
     outline: 2px dashed var(--blue);
 }
 
@@ -231,7 +231,7 @@ body {
 
 /* height */
 @media only screen and (max-height: 800px) {
-    .navigation {
+    .header {
         height: 15vh;
     }
 
@@ -240,7 +240,7 @@ body {
     }
 }
 @media only screen and (max-height: 700px) {
-    .navigation {
+    .header {
         height: 10vh;
     }
 
@@ -251,7 +251,7 @@ body {
 
 /* width */
 @media only screen and (max-width: 655px) {
-    .navigation__logo:focus {
+    .header__logo:focus {
         outline: none;
     }
     
