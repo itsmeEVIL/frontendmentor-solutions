@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Solution](#)
+-   Solution URL: [Solution](https://www.frontendmentor.io/solutions/pingcomingsoonpage-html-css-AWZRkfv14)
 -   Live Site URL: [Live Site](https://itsmeevil-frontendmentor-solutions.netlify.app/ping-coming-soon-page/)
 
 ## Author
