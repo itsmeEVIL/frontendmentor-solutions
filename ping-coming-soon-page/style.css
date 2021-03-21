@@ -124,6 +124,7 @@ body {
 
 .main__content-top__form-input + span::after {
     content: "Please provide a valid email address";
+    width: 100%;
     font-size: 11px;
     font-style: italic;
     color: var(--light-red);
