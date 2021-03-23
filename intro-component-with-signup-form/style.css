@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+    /* primary */
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+
+    /* accent */
+    --blue: hsl(248, 32%, 49%);
+
+    /* neutral */
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+    --dark-shadow: hsla(0, 0%, 0%, 0.2);
+    --dark-green: hsl(154, 53%, 45%);
+    /* --dark-green: #36b07b; */
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    background: url(./images/bg-intro-desktop.png), var(--red);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.introduction {
+    flex: 1;
+}
+
+.introduction__heading {
+    font-size: 5rem;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.introduction__paragraph {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.form {
+    flex: 1;
+}
+
+.form__ad {
+    height: 55px;
+    width: 100%;
+    background: var(--blue);
+    border-radius: 8px;
+    box-shadow: 0 6px var(--dark-shadow);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+.form__ad__text {
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+.form__ad__text span {
+    font-weight: 600;
+}
+
+.form__signup {
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    padding: 3.5rem;
+    box-shadow: 0 6px var(--dark-shadow);
+    position: relative;
+}
+
+.form__signup__container {
+    position: relative;
+}
+
+.form__signup__input {
+    height: 55px;
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--grayish-blue);
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    padding: 0 3rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+    outline: none;
+    transition: all 0.3s ease;
+}
+.form__signup__input:focus {
+    border-color: var(--blue);
+}
+
+.form__signup__input__success__logo,
+.form__signup__input__error__logo {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+.form__signup__input__error__message {
+    position: absolute;
+    top: 48px;
+    right: 3px;
+    color: var(--red);
+    font-style: italic;
+    font-size: 1.1rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.form__signup__input__error {
+    color: var(--red);
+    border-color: var(--red);
+    margin-bottom: 3rem;
+}
+.form__signup__input__error::placeholder {
+    color: var(--red);
+}
+.form__signup__input__error:focus {
+    border-color: var(--red);
+}
+
+.form__signup__input__success {
+    color: var(--green);
+    border-color: var(--green);
+}
+.form__signup__input__success::placeholder {
+    color: var(--green);
+}
+.form__signup__input__success:focus {
+    border-color: var(--green);
+}
+
+.opacity {
+    opacity: 1;
+}
+.top {
+    top: 55px;
+}
+
+.form__signup__input-submit {
+    background: var(--green);
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px var(--dark-green);
+}
+.form__signup__input-submit:hover,
+.form__signup__input-submit:focus {
+    opacity: 0.8;
+}
+.form__signup__input-submit:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px var(--dark-green);
+}
+
+.form__signup__agreement {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--grayish-blue);
+}
+.form__signup__agreement__link {
+    font-weight: 700;
+    color: var(--red);
+    text-decoration: none;
+}
+.form__signup__agreement__link:hover,
+.form__signup__agreement__link:focus {
+    opacity: 0.8;
+}
+.form__signup__agreement__link:focus {
+    outline: 2px dashed var(--red);
+}
+
+@media only screen and (max-width: 935px) {
+    .container {
+        height: 0;
+        max-width: 90%;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 6rem;
+    }
+
+    .form__signup {
+        margin-bottom: 6rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-image: url(./images/bg-intro-mobile.png);
+    }
+
+    .introduction__heading {
+        font-size: 3rem;
+    }
+
+    .form__ad {
+        height: 85px;
+        justify-content: center;
+    }
+    .form__ad__text {
+        width: 223px;
+    }
+}
