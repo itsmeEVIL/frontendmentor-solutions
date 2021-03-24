@@ -90,20 +90,28 @@ body {
 }
 .card__left__paragraph {
     font-weight: 400;
-    margin-bottom: 4.5rem;
+    margin-bottom: 3.5rem;
 }
 .card__left__button {
     background-color: var(--bright-yellow);
+    font-size: 1.6rem;
     font-weight: 700;
     color: #fff;
-    padding: 1.5rem 9.2rem;
+    width: 100%;
+    padding: 1.5rem 0;
+    border: 0;
     border-radius: 6px;
+    outline: 0;
     text-decoration: none;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease, box-shadow 0.2s ease;
 }
-.card__left__button:hover {
+.card__left__button:hover,
+.card__left__button:focus {
     opacity: 0.9;
+}
+.card__left__button:focus {
+    box-shadow: 0 0 0 3px var(--cyan), 0 0 0 6px var(--bright-yellow);
 }
 
 .card__right {
@@ -151,11 +159,17 @@ body {
         grid-row: 2/3;
         padding: 3.5rem 2.5rem;
     }
+    .card__left__button:focus {
+       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
 
     .card__right {
         grid-column: 1;
         grid-row: 3/4;
         padding: 3.5rem 2.5rem;
+    }
+    .card__right__list {
+        font-size: 1.5rem;
     }
 }
 
@@ -166,9 +180,6 @@ body {
 
     .card__left {
         padding: 3.5rem 2rem;
-    }
-    .card__left__button {
-        padding: 1.5rem 11rem;
     }
 
     .card__right {
