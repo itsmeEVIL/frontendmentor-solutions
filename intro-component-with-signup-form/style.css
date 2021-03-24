@@ -116,6 +116,7 @@ body {
 }
 .form__signup__input:focus {
     border-color: var(--blue);
+    box-shadow: 0 0 0 1px var(--blue);
 }
 
 .form__signup__input__success__logo,
@@ -149,6 +150,7 @@ body {
 }
 .form__signup__input__error:focus {
     border-color: var(--red);
+    box-shadow: 0 0 0 1px var(--red);
 }
 
 .form__signup__input__success {
@@ -160,6 +162,7 @@ body {
 }
 .form__signup__input__success:focus {
     border-color: var(--green);
+    box-shadow: 0 0 0 1px var(--green);
 }
 
 .opacity {
@@ -176,10 +179,12 @@ body {
     cursor: pointer;
     border: none;
     box-shadow: 0 4px var(--dark-green);
+    transition: opacity 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 .form__signup__input-submit:hover,
 .form__signup__input-submit:focus {
     opacity: 0.8;
+    box-shadow: 0 4px var(--dark-green);
 }
 .form__signup__input-submit:active {
     transform: translateY(3px);
@@ -205,6 +210,13 @@ body {
     outline: 2px dashed var(--red);
 }
 
+@media only screen and (max-width: 1065px) {
+    .form__signup__agreement {
+        width: 232px;
+        margin: 0 auto;
+    }
+}
+
 @media only screen and (max-width: 935px) {
     .container {
         height: 0;
@@ -216,6 +228,12 @@ body {
 
     .form__signup {
         margin-bottom: 6rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .form__signup__agreement__link:focus {
+        outline: 0;
     }
 }
 
