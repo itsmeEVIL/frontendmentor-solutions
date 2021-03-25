@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Solution](https://frontendmentor.io/solutions)
+-   Solution URL: [Solution](https://www.frontendmentor.io/solutions/singlepricegridcomponent-html-css-eVNe2ql5g)
 -   Live Site URL: [Live Site](https://itsmeevil-frontendmentor-solutions.netlify.app/single-price-grid-component/)
 
 ## Author
