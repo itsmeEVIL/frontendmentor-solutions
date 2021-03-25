@@ -15,7 +15,7 @@ function checkInputs() {
     const inputEmailValue = inputEmail.value.trim();
     const inputPasswordValue = inputPassword.value.trim();
 
-    if (inputFirstNameValue === "") {
+    if (!inputFirstNameValue) {
         setErrorFor(inputFirstName, "First Name cannot be empty");
         inputFirstNameSuccess = false;
     } else {
@@ -23,7 +23,7 @@ function checkInputs() {
         inputFirstNameSuccess = true;
     }
 
-    if (inputLastNameValue === "") {
+    if (!inputLastNameValue) {
         setErrorFor(inputLastName, "Last Name cannot be empty");
         inputLastNameSuccess = false;
     } else {
@@ -31,7 +31,7 @@ function checkInputs() {
         inputLastNameSuccess = true;
     }
 
-    if (inputEmailValue === "") {
+    if (!inputEmailValue) {
         setErrorFor(inputEmail, "Email cannot be empty");
         inputEmailSuccess = false;
     } else if (!isEmail(inputEmailValue)) {
@@ -42,7 +42,7 @@ function checkInputs() {
         inputEmailSuccess = true;
     }
 
-    if (inputPasswordValue === "") {
+    if (!inputPasswordValue) {
         setErrorFor(inputPassword, "Password cannot be empty");
         inputPasswordSuccess = false;
     } else {
@@ -51,10 +51,10 @@ function checkInputs() {
     }
 
     if (
-        inputFirstNameSuccess === true &&
-        inputLastNameSuccess === true &&
-        inputEmailSuccess === true &&
-        inputPasswordSuccess === true
+        inputFirstNameSuccess &&
+        inputLastNameSuccess &&
+        inputEmailSuccess &&
+        inputPasswordSuccess
     ) {
         inputFirstName.value = "";
         inputLastName.value = "";
