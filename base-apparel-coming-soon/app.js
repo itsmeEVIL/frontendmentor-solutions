@@ -35,7 +35,7 @@ function handleError(errorMessage) {
 }
 
 function handleSuccess() {
-    formInput.classList = "main__form__input ";
+    formInput.classList = "main__form__input";
     errorLogo.classList = "main__form__error__logo";
     errorText.classList = "main__form__error__text";
 

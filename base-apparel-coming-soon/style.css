@@ -191,6 +191,7 @@ body {
         margin-top: 5rem;
     }
 }
+
 @media only screen and (max-height: 630px) {
     .main {
         margin-top: 2rem;
@@ -207,6 +208,7 @@ body {
         padding-right: 10rem;
     }
 }
+
 @media only screen and (max-width: 945px) {
     body {
         grid-template-columns: 1fr;
@@ -242,6 +244,7 @@ body {
         background-repeat: no-repeat;
     }
 }
+
 @media only screen and (max-width: 575px) {
     .header {
         margin-left: 4rem;
