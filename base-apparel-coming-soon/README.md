@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 -   Solution URL: [Solution](https://www.frontendmentor.io/solutions/)
--   Live Site URL: [Live Site](https://itsmeevil-frontendmentor-solutions.netlify.app/base-apperal-coming-soon/)
+-   Live Site URL: [Live Site](https://itsmeevil-frontendmentor-solutions.netlify.app/base-apparel-coming-soon/)
 
 ## Author
 

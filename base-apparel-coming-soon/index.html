@@ -16,51 +16,59 @@
     </head>
 
     <body>
-        <div class="main-content">
-            <header class="header">
-                <div>
-                    <img
-                        src="./images/logo.svg"
-                        alt="Base Apparel"
-                        title="Base Apparel"
-                    />
-                </div>
-            </header>
+        <header class="header">
+            <a href="./" class="header__logo">
+                <img
+                    src="./images/logo.svg"
+                    alt="Base Apparel"
+                    title="Base Apparel"
+                />
+            </a>
+        </header>
 
-            <main class="main">
-                <h1 class="main__heading">
-                    <span>We're</span><br />
-                    coming<br />
-                    soon<br />
-                </h1>
+        <main class="main">
+            <h1 class="main__heading">
+                <span>We're</span><br />
+                coming<br />
+                soon<br />
+            </h1>
 
-                <p class="main__paragraph">
-                    Hello fellow shoppers! We're currently building our new
-                    fashion store. Add your email below to stay up-to-date with
-                    announcements and our launch deals.
-                </p>
+            <p class="main__paragraph">
+                Hello fellow shoppers! We're currently building our new fashion
+                store. Add your email below to stay up-to-date with
+                announcements and our launch deals.
+            </p>
 
-                <form class="main__form">
-                    <input
-                        type="email"
-                        placeholder="Email Address"
-                        aria-label="email address input field"
-                        class="main__form__input"
-                    />
-                    <button
-                        type="submit"
-                        aria-label="email address submit button"
-                        title="Submit Button"
-                        class="main__form__submit"
-                    >
-                        <img src="./images/icon-arrow.svg" alt="" />
-                    </button>
-                </form>
-            </main>
-        </div>
+            <form class="main__form">
+                <input
+                    type="email"
+                    placeholder="Email Address"
+                    aria-label="email address input field"
+                    class="main__form__input"
+                />
+                <img
+                    src="./images/icon-error.svg"
+                    alt=""
+                    class="main__form__error__logo"
+                />
+                <p class="main__form__error__text"></p>
+                <button
+                    type="submit"
+                    aria-label="email address submit button"
+                    title="Submit Button"
+                    class="main__form__submit"
+                >
+                    <img src="./images/icon-arrow.svg" alt="" />
+                </button>
+            </form>
+        </main>
 
         <div class="hero">
-            <img src="./images/hero-desktop.jpg" alt="" class="hero__image" />
+            <div class="hero__image"></div>
         </div>
+
+        <div class="background"></div>
+
+        <script src="./app.js"></script>
     </body>
 </html>
