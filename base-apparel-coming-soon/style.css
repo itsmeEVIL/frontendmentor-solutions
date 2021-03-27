@@ -64,7 +64,7 @@ body {
     font-size: 6.5rem;
     font-weight: 700;
     color: var(--dark-grayish-red);
-    letter-spacing: 1rem;
+    letter-spacing: 1.5rem;
     text-transform: uppercase;
     line-height: 1.1;
 }
@@ -78,7 +78,7 @@ body {
     font-weight: 400;
     color: var(--desaturated-red);
     line-height: 1.8;
-    margin: 2.5rem 0 4.5rem;
+    margin: 2rem 0 4rem;
 }
 
 .main__form {
