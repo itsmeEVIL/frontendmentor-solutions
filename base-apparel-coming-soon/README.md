@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Solution](https://www.frontendmentor.io/solutions/)
+-   Solution URL: [Solution](https://www.frontendmentor.io/solutions/baseapparelcomingsoonpage-html-css-js-MbXufJu4s)
 -   Live Site URL: [Live Site](https://itsmeevil-frontendmentor-solutions.netlify.app/base-apparel-coming-soon/)
 
 ## Author
