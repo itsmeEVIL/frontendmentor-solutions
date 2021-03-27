@@ -1,0 +1,205 @@
+@import "variables";
+@import "global";
+
+.header {
+    height: 25vh;
+    text-align: center;
+    padding-top: 4rem;
+
+    &__heading {
+        font-size: 3.6rem;
+        font-weight: 200;
+        color: $very-dark-blue;
+        line-height: 1.3;
+        margin-bottom: 1.6rem;
+
+        span {
+            font-weight: 600;
+        }
+    }
+
+    &__paragraph {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: $grayish-blue;
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+}
+
+.main {
+    height: 75vh;
+    max-width: 1111px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2.5rem;
+    margin: 0 auto;
+    padding: 3rem 0 5rem;
+
+    &__card {
+        height: 24rem;
+        max-width: 35rem;
+        background: #fff;
+        padding: 3rem;
+        border-radius: 0.6rem;
+        box-shadow: 0 1.5rem 1.5rem rgb(148, 173, 219, 0.2);
+
+        &__heading {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: $very-dark-blue;
+            margin-bottom: 1rem;
+        }
+
+        &__description {
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: $grayish-blue;
+            line-height: 1.8;
+        }
+
+        &--cyan {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            border-top: 5px solid $cyan;
+            transform: translateY(60%);
+            background-image: url(./images/icon-supervisor.svg);
+            background-repeat: no-repeat;
+            background-position: bottom 3rem right 3rem;
+        }
+
+        &--red {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            border-top: 5px solid $red;
+            align-self: flex-end;
+            background-image: url(./images/icon-team-builder.svg);
+            background-repeat: no-repeat;
+            background-position: bottom 3rem right 3rem;
+        }
+
+        &--orange {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            border-top: 5px solid $orange;
+            background-image: url(./images/icon-karma.svg);
+            background-repeat: no-repeat;
+            background-position: bottom 3rem right 3rem;
+        }
+
+        &--blue {
+            grid-column: 3/4;
+            grid-row: 1/2;
+            border-top: 5px solid $blue;
+            transform: translateY(60%);
+            background-image: url(./images/icon-calculator.svg);
+            background-repeat: no-repeat;
+            background-position: bottom 3rem right 3rem;
+        }
+    }
+}
+
+@media only screen and (max-height: 740px) {
+    .header {
+        padding-top: 2rem;
+    }
+
+    .main {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 1145px) {
+    .main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 0 5rem;
+
+        &__card {
+            justify-self: center;
+
+            &--cyan {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                transform: translateY(0);
+            }
+
+            &--red {
+                grid-column: 2/3;
+                grid-row: 1/2;
+                align-self: flex-start;
+            }
+
+            &--orange {
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+
+            &--blue {
+                grid-column: 2/3;
+                grid-row: 2/3;
+                transform: translateY(0);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .main {
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: 0 3rem;
+        padding: 3rem 0 5rem;
+
+        &__card {
+            justify-self: center;
+
+            &--cyan {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                transform: translateY(0);
+            }
+
+            &--red {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                align-self: flex-start;
+            }
+
+            &--orange {
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+
+            &--blue {
+                grid-column: 1/2;
+                grid-row: 4/5;
+                transform: translateY(0);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .header {
+        margin: 3rem;
+
+        &__heading {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 362px) {
+    .main {
+        padding-top: 7rem;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .main {
+        padding-top: 12rem;
+    }
+}
