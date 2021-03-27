@@ -1,5 +1,6 @@
 const formInput = document.querySelector(".main__form__input");
 const formSubmit = document.querySelector(".main__form__submit");
+const successLogo = document.querySelector(".main__form__success__logo");
 const errorLogo = document.querySelector(".main__form__error__logo");
 const errorText = document.querySelector(".main__form__error__text");
 
@@ -22,7 +23,9 @@ formSubmit.addEventListener("click", (event) => {
 
         // if email is valid
         if (checkEmail(formInputValue)) {
-            handleSuccess();
+            handleSuccess(
+                "Success! Your email will now receive every up-to-date news about our store"
+            );
         }
     }
 });
@@ -34,10 +37,18 @@ function handleError(errorMessage) {
     errorText.innerText = errorMessage;
 }
 
-function handleSuccess() {
-    formInput.classList = "main__form__input";
+function handleSuccess(successMessage) {
+    formInput.classList = "main__form__input input--success";
+    successLogo.classList = "main__form__success__logo logo--success";
     errorLogo.classList = "main__form__error__logo";
-    errorText.classList = "main__form__error__text";
+    errorText.classList = "main__form__error__text text--success";
+    errorText.innerText = successMessage;
+
+    setTimeout(() => {
+        formInput.classList = "main__form__input";
+        successLogo.classList = "main__form__success__logo";
+        errorText.classList = "main__form__error__text";
+    }, 2500);
 
     formInput.value = "";
     formInput.blur();

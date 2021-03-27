@@ -96,7 +96,7 @@ body {
 
 .main__form__input {
     width: 100%;
-    padding: 2rem 11rem 2rem 3rem;
+    padding: 2rem 15.5rem 2rem 3rem;
     border: 1px solid var(--desaturated-red);
     border-radius: 5rem;
     outline: 0;
@@ -111,6 +111,7 @@ body {
     color: var(--desaturated-red);
 }
 
+.main__form__success__logo,
 .main__form__error__logo {
     position: absolute;
     top: 1.6rem;
@@ -121,9 +122,11 @@ body {
     transition: opacity 0.3s ease;
 }
 .main__form__error__text {
+    width: 60%;
     position: absolute;
-    bottom: -1rem;
+    bottom: -1.5rem;
     left: 3.2rem;
+    text-align: start;
     pointer-events: none;
     user-select: none;
     opacity: 0;
@@ -169,6 +172,25 @@ body {
     bottom: -2.5rem;
 }
 
+.main__form:hover > .main__form__input.input--success,
+.main__form:focus-within > .main__form__input.input--success {
+    box-shadow: 0 0 0 1px hsl(120, 72%, 52%);
+}
+.main__form__input.input--success {
+    border-color: hsl(120, 72%, 52%);
+}
+.main__form__input.input--success::placeholder {
+    color: hsl(120, 72%, 52%);
+}
+.main__form__success__logo.logo--success {
+    opacity: 1;
+}
+.main__form__error__text.text--success {
+    color: hsl(120, 72%, 52%);
+    opacity: 1;
+    bottom: -3.5rem;
+}
+
 .hero {
     grid-column: 2/3;
     grid-row: 1/3;
@@ -207,6 +229,10 @@ body {
         margin-left: 10rem;
         padding-right: 10rem;
     }
+
+    .main__form__error__text {
+        width: 70%;
+    }
 }
 
 @media only screen and (max-width: 945px) {
@@ -233,6 +259,10 @@ body {
         font-size: 5rem;
     }
 
+    .main__form__error__text.text--success {
+        bottom: -2.5rem;
+    }
+
     .hero {
         grid-column: 1/2;
         grid-row: 2/3;
@@ -242,6 +272,12 @@ body {
         margin: 0 auto;
         background: url(./images/hero-mobile.jpg);
         background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 868px) {
+    .main__form__error__text.text--success {
+        bottom: -3.5rem;
     }
 }
 
@@ -269,6 +305,10 @@ body {
         margin-bottom: 3.5rem;
     }
 
+    .main__form__input {
+        padding-right: 13.5rem;
+    }
+
     .main__form__error__logo {
         right: 10rem;
     }
@@ -289,5 +329,11 @@ body {
 
     .main {
         margin: 5rem 3rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .main__form__error__text.text--success {
+        bottom: -5.5rem;
     }
 }
