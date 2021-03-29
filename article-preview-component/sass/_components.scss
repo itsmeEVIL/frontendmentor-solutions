@@ -187,6 +187,8 @@
             justify-content: flex-start;
             border-radius: 0;
             box-shadow: 0 0 0 var(--light-shadow);
+            border-top-left-radius: 10rem;
+            border-bottom-left-radius: 10rem;
             transform: scaleX(0);
             transform-origin: right;
 
@@ -206,6 +208,7 @@
 
             &.links-active {
                 top: -1.5rem;
+                border-radius: 0;
                 opacity: 1;
                 pointer-events: all;
                 transform: scaleX(1);
