@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Solution](#)
+-   Solution URL: [Solution](https://www.frontendmentor.io/solutions/articlepreviewcomponent-html-sass-js-KMPGkhkAi)
 -   Live Site URL: [Live Site](https://itsmeevil-frontendmentor-solutions.netlify.app/article-preview-component/)
 
 ## Author
