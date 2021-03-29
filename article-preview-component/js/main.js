@@ -11,6 +11,7 @@ document.body.addEventListener("click", (event) => {
         // instead click the elements inside share__links
         event.target.classList.contains("share__links") ||
         event.target.classList.contains("share__links__text") ||
+        event.target.classList.contains("share__links__link") ||
         event.target.parentElement.classList.contains("share__links__link")
     ) {
         shareButton.classList = "share share-active";
