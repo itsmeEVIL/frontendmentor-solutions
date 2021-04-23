@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Solution\*](https://frontendmentor.io/solutions)
+-   Solution URL: [Solution](https://www.frontendmentor.io/solutions/3columnpreviewcard-html-sass-mWNpe06k-)
 -   Live Site URL: [Live Site](https://itsmeevil-frontendmentor-solutions.netlify.app/3-column-preview-card/)
 
 ## Author
