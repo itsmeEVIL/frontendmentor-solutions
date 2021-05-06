@@ -1,0 +1,96 @@
+@use "mixins";
+
+.card {
+    min-height: 45rem;
+    max-width: 110rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 4rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    background-color: var(--dark-desaturated-blue);
+
+    &__intro {
+        padding: 7rem;
+        padding-bottom: 5rem;
+
+        &__heading {
+            @include mixins.fonts("Inter", 700, 3.7rem, var(--white), 1.3);
+
+            a {
+                color: var(--soft-violet);
+                text-decoration: none;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 0.4rem;
+                    background-color: var(--soft-violet);
+                    position: absolute;
+                    bottom: -12%;
+                    left: 0;
+                    transform: scaleX(0);
+                    transform-origin: center;
+                    transition: transform 0.25s ease;
+                }
+
+                &:hover::after {
+                    transform: scaleX(1);
+                }
+            }
+        }
+
+        &__paragraph {
+            @include mixins.fonts(
+                "Inter",
+                400,
+                1.5rem,
+                var(--slightly-transparent-white-1),
+                1.8
+            );
+            margin: 2.5rem 0 7.5rem;
+        }
+
+        &__stats {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+
+            &__stat {
+                @include mixins.fonts("Inter", 700, 2.4rem, var(--white), 1);
+
+                span {
+                    @include mixins.fonts(
+                        "Lexend Deca",
+                        400,
+                        1.3rem,
+                        var(--slightly-transparent-white-2),
+                        0
+                    );
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    &__image {
+        background-image: url(../images/image-header-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+
+        // &::after {
+        //     content: "";
+        //     width: 100%;
+        //     height: 100%;
+        //     background-color: var(--soft-violet);
+        //     opacity: 0.4;
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        // }
+    }
+}

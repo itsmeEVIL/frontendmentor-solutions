@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
 
-$very-dark-blue: hsl(233, 47%, 7%);
-$dark-desaturated-blue: hsl(244, 38%, 16%);
-$soft-violet: hsl(277, 64%, 61%);
-$white: hsl(0, 0%, 100%);
-$slightly-transparent-white-1: hsla(0, 0%, 100%, 0.75);
-$slightly-transparent-white-2: hsla(0, 0%, 100%, 0.6);
+:root {
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --slightly-transparent-white-1: hsla(0, 0%, 100%, 0.75);
+    --slightly-transparent-white-2: hsla(0, 0%, 100%, 0.6);
+}
 
 *,
 *::before,
@@ -16,14 +18,13 @@ $slightly-transparent-white-2: hsla(0, 0%, 100%, 0.6);
 }
 
 html {
-    font-family: "Lexend Deca", sans-serif;
     font-size: 62.5%;
 }
 
 body {
     min-height: 100vh;
+    background-color: var(--very-dark-blue);
     text-rendering: optimizeSpeed;
-    background-color: var(--very-light-gray);
     display: flex;
     justify-content: center;
     align-items: center;
