@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Solution](https://frontendmentor.com/solutions)
+-   Solution URL: [Solution](https://www.frontendmentor.io/solutions/statspreviewcard-html-sass-RRteqjQ5L)
 -   Live Site URL: [Live Site](https://itsmeevil-frontendmentor-solutions.netlify.app/stats-preview-card/)
 
 ## Author
