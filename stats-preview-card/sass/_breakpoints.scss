@@ -36,7 +36,7 @@
             }
         }
 
-        &__image {
+        &__image::after {
             background-position: center bottom;
         }
     }
@@ -72,7 +72,7 @@
             }
         }
 
-        &__image {
+        &::after {
             background-image: url(../images/image-header-mobile.jpg);
         }
     }
