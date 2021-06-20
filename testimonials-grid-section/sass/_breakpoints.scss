@@ -1,0 +1,44 @@
+@use "mixins" as *;
+
+@media only screen and (max-width: 1160px) {
+    main {
+        width: 100%;
+        margin: 8rem 5rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "violet violet gray"
+            "dark dark white-1"
+            "white-2 white-2 white-2";
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "violet  gray"
+            "violet dark"
+            "white-1 dark"
+            "white-2 white-2";
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    main {
+        margin: 5rem 2rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "violet"
+            "violet"
+            "gray"
+            "white-1"
+            "dark"
+            "dark"
+            "white-2"
+            "white-2";
+    }
+
+    .card--violet {
+        background-position: top 0 right 10%;
+    }
+}
