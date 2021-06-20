@@ -38,7 +38,13 @@
             "white-2";
     }
 
-    .card--violet {
-        background-position: top 0 right 10%;
+    .card {
+        &:hover {
+            transform: scale(1);
+        }
+
+        &--violet {
+            background-position: top 0 right 10%;
+        }
     }
 }
