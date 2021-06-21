@@ -1,11 +1,11 @@
-@use "mixins" as *;
+@use "config" as *;
 
 .card {
     padding: 2.5rem 3rem;
     border-radius: 8px;
     box-shadow: 4rem 5rem 3rem -3rem rgba(72, 85, 106, 0.2);
     transition: transform ease 0.2s;
-    
+
     &:hover {
         transform: scale(1.015);
     }
@@ -40,10 +40,10 @@
         @include fonts(500, 1.3rem, 1.4);
         opacity: 0.7;
     }
-    
+
     &--violet {
-        background-color: var(--moderate-violet);
-        color: var(--white);
+        background-color: $moderate-violet;
+        color: $white;
         grid-area: violet;
         background-image: url("../images/bg-pattern-quotation.svg");
         background-repeat: no-repeat;
@@ -55,14 +55,14 @@
     }
 
     &--gray {
-        background-color: var(--very-dark-grayish-blue);
-        color: var(--light-grayish-blue);
+        background-color: $very-dark-grayish-blue;
+        color: $light-grayish-blue;
         grid-area: gray;
     }
 
     &--white {
         background-color: var(--white);
-        color: var(--very-dark-grayish-blue);
+        color: $very-dark-grayish-blue;
 
         &-1 {
             grid-area: white-1;
@@ -74,8 +74,8 @@
     }
 
     &--dark {
-        background-color: var(--very-dark-blackish-blue);
-        color: var(--light-grayish-blue);
+        background-color: $very-dark-blackish-blue;
+        color: $light-grayish-blue;
         grid-area: dark;
 
         img {
