@@ -44,11 +44,14 @@
     &--violet {
         @include color($moderate-violet, $white);
         grid-area: violet;
+
         background-image: url("../images/bg-pattern-quotation.svg");
         background-repeat: no-repeat;
         background-position: top 0 right 18%;
 
         img {
+            height: 3rem;
+            width: 3rem;
             border: 2px solid rgba(255, 255, 255, 0.3);
         }
     }
@@ -75,6 +78,8 @@
         grid-area: dark;
 
         img {
+            height: 3rem;
+            width: 3rem;
             border: 2px solid rgb(117, 65, 200);
         }
     }
