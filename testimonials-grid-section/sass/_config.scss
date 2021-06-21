@@ -10,3 +10,8 @@ $light-grayish-blue: hsl(210, 46%, 95%);
     font-size: $fs;
     line-height: $fh;
 }
+
+@mixin color($bg, $fg) {
+    background-color: $bg;
+    color: $fg;
+}
