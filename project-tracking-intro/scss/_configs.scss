@@ -1,0 +1,44 @@
+$red: hsl(0, 100%, 68%);
+$very-dark-blue: hsl(230, 29%, 20%);
+$dark-grayish-blue: hsl(230, 11%, 40%);
+$grayish-blue: hsl(231, 7%, 65%);
+$light-grayish-blue: hsl(207, 33%, 95%);
+
+@mixin flex($ai: unset, $jc: unset) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin tabFocus($color) {
+    &:focus {
+        outline: 3px dashed $color;
+        outline-offset: 0.5rem;
+    }
+}
+
+@mixin navLinks($color) {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color;
+    @include tabFocus($color);
+
+    &::after {
+        content: "";
+        display: block;
+        height: 0.2rem;
+        width: 100%;
+        background-color: $color;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.2s ease;
+    }
+
+    &:hover::after,
+    &:focus::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+}
