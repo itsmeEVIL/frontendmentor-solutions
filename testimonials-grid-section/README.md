@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Solution](https://frontendmentor.io/solutions)
+-   Solution URL: [Solution](https://www.frontendmentor.io/solutions/testimonialsgridsection-html-sass-TnvPIoAgP)
 -   Live Site URL: [Live Site](https://itsmeevil-frontendmentor-solutions.netlify.app/testimonials-grid-section/)
 
 ## Author
